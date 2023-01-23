@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css">
+    <title>Weather Forecast Finals</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-app-wrapper">
+            <div class="weather-app">
+                <form id="search-form" class="mb-4">
+                    <div class="row">
+                        <div class="col-8">
+                            <input type="search" placeholder="Enter your city..." class="form-control" id="city-input"
+                                autocomplete="off" />
+                        </div>
+                        <div class="col-2">
+                            <input type="submit" value="Search" class="btn btn-info" />
+                        </div>
+                    </div>
+                </form>
+                <div class="overview">
+                    <h1><span id="city">New York</span></h1>
+                    <ul>
+                        <li>Last updated: <span id="time">Friday 05:00</span></li>
+                        <li><span id="description">Clear</span></li>
+                    </ul>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <div class="d-flex weather-temperature">
+                            <img src="" id="icon" style="width: 5em; height: 5em;" alt="Cloudy" />
+                            <strong id="temperature">12</strong><span class="units"><a href="#" id="fahrenheit-link"
+                                    class="active"> &degF </a>| <a href="#" id="celsius-link">&degC</a></span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <ul>
+                            <li>Feels like: <span id="feel"></span>&deg</li>
+                            <li>Humidity: <span id="humidity"></span>%</li>
+                            <li>Wind: <span id="wind"></span>/mph</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="weather-forecast">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="weather-forecast-date">THUR</div>
+                            <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+                                alt="*" width="42px" />
+                            <div class="weather-forecast-temps">
+                                <span class="forecast-temp-hi">18&deg;</span>
+                                <span class="forecast-temp-lo">12&deg;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <small>
+                <a href="https://github.com/wecodeschool/vanilla-weather-app" target="_blank">Open-source code</a>
+                By Adessa
+                Morciglio
+            </small>
+
+        </div>
+    </div>
+    <script src="src/script.js"></script>
+
+
+
+
+</body>
+
+</html>
