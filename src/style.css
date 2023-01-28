@@ -1,9 +1,16 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-image: url("../images/42.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  padding-top: 10px;
 }
 
 h1 {
-  color: #878787;
+  color: aquamarine;
   font-size: 24px;
   font-weight: 100;
   line-height: 28px;
@@ -19,7 +26,7 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
-  color: rgb(135, 135, 135);
+  color: aquamarine;
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
@@ -30,8 +37,8 @@ li::first-letter {
 }
 
 .weather-app-wrapper {
-    max-width: 600px;
-    margin: 30px auto;
+  max-width: 600px;
+  margin: 30px auto;
 }
 
 .weather-app {
@@ -39,31 +46,35 @@ li::first-letter {
   margin: 30px auto;
   padding: 20px;
   border: 1px solid #dadde1;
-  border-radius: 5px;
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0);
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.8px);
+  -webkit-backdrop-filter: blur(3.8px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .overview {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .weather-temperature img {
-    margin-right: 10px;
-
-
+  margin-right: 10px;
 }
 
 .weather-temperature strong {
-    color: rgb(33,33,33);
-    font-size: 64px;
-    line-height: 1;
-    font-weight: 400;
-
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 400;
 }
 
 .weather-temperature .units {
-    position: relative;
-    font-size: 16px;
-    top: -34px;
+  position: relative;
+  font-size: 16px;
+  top: -34px;
+  font-weight: bold;
 }
 
 .weather-temperature .active {
@@ -83,15 +94,14 @@ li::first-letter {
 
 .weather-forecast-date {
   font-size: 16px;
-  color:black;
+  color: black;
   opacity: 0.6;
 }
 
 .weather-forecast-temp-lo {
-  opacity: 0.8;
+  opacity: 1.8;
 }
 
 .weather-forecast-temps {
   font-size: 13px;
-
 }
