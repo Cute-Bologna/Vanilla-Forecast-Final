@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Kiwi+Maru:wght@300;400;500&family=Poppins:ital,wght@0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
@@ -36,19 +42,20 @@
                     </ul>
                 </div>
 
+                
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-sm-6">
                         <div class="d-flex weather-temperature">
-                            <img src="" id="icon" style="width: 5em; height: 5em;" alt="Cloudy" />
+                            <img src="" id="icon" class="img-fluid" style="width: 5em; height: 5em;" alt="Cloudy" />
                             <strong id="temperature">12</strong><span class="units"><a href="#" id="fahrenheit-link"
-                                    class="active"> &degF </a>| <a href="#" id="celsius-link">&degC</a></span>
+                            class="active"> &degF </a>| <a href="#" id="celsius-link">&degC</a></span>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-sm-6">
                         <ul>
-                            <li>Feels like: <span id="feel"></span>&deg</li>
-                            <li>Humidity: <span id="humidity"></span>%</li>
-                            <li>Wind: <span id="wind"></span>/mph</li>
+                            <li>Feels like: 🌡<span id="feel"></span>&deg</li>
+                            <li>Humidity: 💧<span id="humidity"></span>%</li>
+                            <li>Wind: 🌀<span id="wind"></span>/mph</li>
                         </ul>
                     </div>
                 </div>

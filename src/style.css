@@ -1,12 +1,12 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Kiwi Maru", sans-serif;
   background-image: url("../images/42.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
   padding-top: 10px;
+  position: relative;
 }
 
 h1 {
@@ -59,8 +59,11 @@ li::first-letter {
   margin-bottom: 20px;
 }
 
+
 .weather-temperature img {
   margin-right: 10px;
+  height: 64px;
+  width: 64px;
 }
 
 .weather-temperature strong {
@@ -71,7 +74,7 @@ li::first-letter {
 }
 
 .weather-temperature .units {
-  position: relative;
+  position: sticky;
   font-size: 16px;
   top: -34px;
   font-weight: bold;
@@ -99,7 +102,7 @@ li::first-letter {
 }
 
 .weather-forecast-temp-lo {
-  opacity: 1.8;
+  opacity: 0.8;
 }
 
 .weather-forecast-temps {
